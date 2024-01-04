@@ -105,13 +105,12 @@ nav {
 .secondRowNav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logoImage {
   margin: 0 0 0 5vw;
-  height: 40vh;
-  width: 13vw;
+  height: 50vh;
+  width: 16vw;
   max-width: 100vw;
   max-height: 100vh;
   transition: 0.1s;
@@ -119,6 +118,10 @@ nav {
 
 .logoImage:hover {
   transform: scale(1.02);
+}
+
+.navLinks {
+  align-self: center;
 }
 
 .navLinks div {
