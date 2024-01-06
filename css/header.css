@@ -10,11 +10,11 @@
   margin: 0;
 }
 nav {
-  background-color: rgb(165, 220, 255);
+  background-color: rgb(204, 243, 242);
 }
 
 .firstRowNav {
-  background-color: rgb(145, 213, 255);
+  background-color: rgb(233, 247, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;

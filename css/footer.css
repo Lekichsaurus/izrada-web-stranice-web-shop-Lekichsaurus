@@ -4,8 +4,17 @@
   color: black;
 }
 
-body {
-  background-color: rgb(165, 220, 255);
+.container::after {
+  background-image: url(https://mindstacktechnologies.com/wordpress/wp-content/uploads/2018/01/ecommerce-banner.jpg);
+  content: "";
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
 }
 
 .auto-height-iframe {
