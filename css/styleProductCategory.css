@@ -8,3 +8,43 @@
   width: 100%;
   margin: 0;
 }
+
+.mainFont {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-align: center;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.firstRow,
+.secondRow {
+  display: flex;
+  justify-content: space-around;
+}
+
+.firstRow a,
+.secondRow a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.box {
+  height: 50%;
+  margin: 10px auto;
+  padding: 50px;
+  text-align: center;
+}
+
+.firstRow a:hover,
+.secondRow a:hover {
+  outline: 1px solid rgb(186, 186, 186);
+}
+.productCategoryImages {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
