@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/styleCheckout.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <header>
+      <iframe src="../partials/header.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="box">
+          <div class="left">
+            <form action="">
+              <div class="row">
+                <input placeholder="Unesite ime i prezime" type="text" name="name" id="name" required />
+              </div>
+
+              <div class="row">
+                <input placeholder="Unesite adresu" type="text" name="address" id="address" required />
+              </div>
+
+              <div class="row">
+                <input placeholder="ZIP" type="text" name="zip" id="zip" required />
+              </div>
+
+              <div class="row">
+                <input placeholder="Unesite grad" type="text" name="town" id="town" required />
+              </div>
+
+              <div class="row">
+                <input placeholder="Unesite email" type="email" name="email" id="email" required />
+              </div>
+
+              <div class="row">
+                <input placeholder="Unesite broj telefona" type="text" name="phone" id="phone" required />
+              </div>
+            </form>
+          </div>
+
+          <div class="right">
+            <div class="info">
+              <span>Proizvod</span>
+              <span>Količina</span>
+              <span>Cijena</span>
+              <span>Izbriši</span>
+            </div>
+
+            <div class="products row">
+              <div>
+                <a href="">
+                  <img class="img" src="./images/products/tv/tv.jpeg" alt="slika televizije" />
+                </a>
+              </div>
+
+              <div class="quantity">
+                <button class="counter">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <span>1</span>
+                <button class="counter">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+
+              <div>
+                <span> 1599, 90 € </span>
+              </div>
+
+              <div>
+                <button class="delete">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="products row">
+              <div>
+                <a href="">
+                  <img class="img" src="./images/products/laptop.jpeg" alt="slika laptopa" />
+                </a>
+              </div>
+
+              <div class="quantity">
+                <button class="counter">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <span>1</span>
+                <button class="counter">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+
+              <div>
+                <span> 999, 90 € </span>
+              </div>
+
+              <div>
+                <button class="delete">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="products row">
+              <div>
+                <a href=""> <img class="img" src="./images/products/smartphone/smartphone1.jpeg" alt="slika mobitela" /> </a>
+              </div>
+
+              <div class="quantity">
+                <button class="counter">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <span>1</span>
+                <button class="counter">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+
+              <div>
+                <span> 599, 90 € </span>
+              </div>
+
+              <div>
+                <button class="delete">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="total">Ukupno : <span> 3199, 70 € </span></div>
+            <input type="submit" id="submit" required value="Plati" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <iframe src="../partials/footer.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
+    </footer>
+
+    <script src="../js/javascript.js"></script>
+  </body>
+</html>

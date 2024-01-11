@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.auto-height-iframe {
+  border: none;
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  margin: 50px auto;
+  padding: 10px;
+  font-size: 4rem;
+  background-color: rgb(204, 243, 242);
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  margin: 0 3vw;
+}
+
+.right {
+  width: 100%;
+}
+
+.row input {
+  font-size: 1.2rem;
+  padding: 15px;
+  width: 100%;
+  margin: 20px 10vw 20px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+
+.info span {
+  width: 25%;
+}
+
+.products {
+  margin: 5px 10px 20px 10px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products div {
+  width: 25%;
+}
+
+.products div:not(:first-of-type) {
+  margin-bottom: 30px;
+}
+
+.right .products:nth-of-type(2) {
+  border-top: 1px solid black;
+}
+
+.products span {
+  font-size: 1.5rem;
+  justify-content: space-between;
+}
+
+.quantity {
+  border-radius: 3px;
+}
+
+.counter,
+.delete {
+  padding: 8px;
+  transition: 0.2s;
+  border: none;
+}
+
+.counter:hover {
+  cursor: pointer;
+  background-color: rgb(164, 164, 164);
+}
+
+.fa-xmark {
+  transition: 0.2s;
+  color: white;
+}
+
+.fa-xmark:hover {
+  cursor: pointer;
+}
+
+.delete {
+  border: none;
+  background-color: black;
+}
+
+.delete:hover {
+  cursor: pointer;
+  background-color: rgb(75, 75, 75);
+  color: black;
+}
+
+.img {
+  margin: 0 0;
+  width: 150px;
+  height: 150px;
+}
+
+.fa-xmark {
+  transition: 0.2s;
+  color: white;
+}
+
+.fa-xmark:hover {
+  cursor: pointer;
+}
+
+.delete {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: black;
+  line-height: 10px;
+  padding: 8px;
+  transition: 0.2s;
+  border: none;
+}
+
+.delete:hover {
+  cursor: pointer;
+  background-color: rgb(75, 75, 75);
+  color: black;
+}
+
+#submit {
+  width: 20%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: rgb(194, 194, 194);
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgb(143, 143, 143);
+  position: relative;
+  top: -2px;
+}
+
+.total {
+  text-align: right;
+  width: 28vw;
+  font-size: 1.5rem;
+}
