@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/styleContact.css" />
+
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <header>
+      <iframe src="../partials/header.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
+    </header>
+
+    <main>
+      <h2 class="mainFont">Kontakt</h2>
+      <div class="container">
+        <div class="box">
+          <form action="">
+            <div class="row">
+              <input placeholder="Unesite ime i prezime" type="text" name="name" id="name" required />
+            </div>
+
+            <div class="row">
+              <input placeholder="Unesite adresu" type="text" name="address" id="address" required />
+            </div>
+
+            <div class="row">
+              <input placeholder="ZIP" type="text" name="zip" id="zip" required />
+            </div>
+
+            <div class="row">
+              <input placeholder="Unesite grad" type="text" name="town" id="town" required />
+            </div>
+
+            <div class="row">
+              <input placeholder="Unesite email" type="email" name="email" id="email" required />
+            </div>
+
+            <div class="row">
+              <input placeholder="Unesite broj telefona" type="text" name="phone" id="phone" required />
+            </div>
+
+            <label for="message">Poruka</label>
+            <div class="row">
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="row">
+              <input type="submit" name="submit" id="submit" value="Pošalji" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <iframe src="../partials/footer.html" width="100%" class="auto-height-iframe" frameborder="0"></iframe>
+    </footer>
+
+    <script src="../js/javascript.js"></script>
+  </body>
+</html>
