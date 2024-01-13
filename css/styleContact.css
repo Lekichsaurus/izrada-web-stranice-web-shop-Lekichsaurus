@@ -59,11 +59,19 @@ main h2 {
   width: 80%;
   max-width: 80%;
   max-height: 100px;
+  border-radius: 5px;
+}
+
+.rowData {
+  text-align: justify;
+  margin: 0 auto;
+  width: 60%;
+  margin-bottom: 10px;
 }
 
 #submit {
   background-color: rgb(0, 41, 67);
-  border: none;
+  border: 1px solid rgb(204, 243, 242);
   border-radius: 5px;
   transition: 0.3s;
   color: white;

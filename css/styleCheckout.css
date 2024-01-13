@@ -25,6 +25,16 @@
   justify-content: space-between;
 }
 
+.rowData {
+  color: rgb(0, 41, 67);
+  text-align: justify;
+  margin: 0 auto;
+  width: 60%;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
 .left,
 .right {
   margin: 0 3vw;
