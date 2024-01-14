@@ -175,7 +175,13 @@
 }
 
 .total {
-  text-align: right;
-  width: 28vw;
+  justify-content: center;
   font-size: 1.5rem;
+  outline: 1px solid rgb(0, 41, 67);
+  color: rgb(0, 41, 67);
+  border-radius: 5px;
+}
+
+.total span {
+  margin: 0 20px;
 }

@@ -9,25 +9,13 @@
   margin: 0;
 }
 
-.mainFont {
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 5px;
-  font-weight: bold;
-}
-
 .title {
   font-family: "Lato", sans-serif;
   text-decoration: underline;
 }
 
 .mainFirstRow {
-  width: 100%;
   text-align: center;
-  margin: 20px auto;
-}
-
-.mainFirstRow h1 {
-  margin: 20px 0;
 }
 
 .mainFirstRow p {
@@ -49,6 +37,7 @@
   margin: 0 30px;
 }
 
+.mainFirstRow,
 .mainSecondRow,
 .mainThirdRow,
 .mainFourthRow,
@@ -124,7 +113,7 @@
 }
 
 .blogImages {
-  width: 100%;
+  width: 466px;
   height: 230px;
 }
 
