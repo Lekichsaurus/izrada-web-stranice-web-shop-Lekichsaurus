@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 60%;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: justify;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  outline: 1px solid rgb(158, 158, 158);
+  background-color: rgb(204, 243, 242);
+  transition: 0.3s;
+}
+
+.container input {
+  margin-bottom: 10px;
+}
+
+.container h3 {
+  margin: 20px 0;
+}

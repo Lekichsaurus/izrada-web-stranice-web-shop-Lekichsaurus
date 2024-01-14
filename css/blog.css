@@ -9,15 +9,65 @@
   margin: 0;
 }
 
-.container {
+main {
   display: flex;
-  justify-content: center;
-  background-color: salmon;
 }
 
-.box {
-  margin: 50px auto;
+.leftMain {
+  width: 75%;
+}
+
+.rightMain {
+  width: 25%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blogBox {
+  width: 40%;
+  margin: 20px;
   padding: 20px;
-  font-size: 6rem;
-  background-color: aquamarine;
+  border-radius: 5px;
+  outline: 1px solid grey;
+  transition: 0.3s;
+}
+
+.blogBox:hover {
+  transform: scale(1.02);
+  background-color: rgb(204, 243, 242);
+}
+
+.blogImages {
+  width: 100%;
+  height: 60%;
+  border-radius: 5px;
+  outline: 1px solid rgb(158, 158, 158);
+}
+
+.blogBox a {
+  text-decoration: none;
+  color: black;
+}
+
+.blogBox p,
+.blogBox section {
+  margin-top: 10px;
+}
+
+.fa-arrow-right {
+  margin-left: 10px;
+  color: green;
+}
+
+div.rightMain {
+  position: sticky;
+  top: 20px;
+  float: right;
+}
+
+.rightMain iframe {
+  height: 100%;
 }

@@ -3,16 +3,53 @@
   padding: 0;
 }
 
-.auto-height-iframe {
-  border: none;
-  width: 100%;
-  margin: 0;
+main {
+  display: flex;
+  justify-content: center;
 }
 
-.box {
-  width: 15%;
-  margin: 50px;
+div.container {
+  width: 95%;
+  position: sticky;
+  top: 20px;
   float: right;
+  border-radius: 5px;
+}
+
+.blogImages {
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+  outline: 1px solid rgb(158, 158, 158);
+}
+
+.blogBox {
+  margin: 20px auto;
   padding: 20px;
-  background-color: aquamarine;
+  text-align: justify;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  outline: 1px solid rgb(158, 158, 158);
+  background-color: rgb(204, 243, 242);
+  transition: 0.3s;
+}
+
+.blogBox:hover {
+  transform: scale(1.02);
+  background-color: white;
+}
+
+.blogBox a {
+  text-decoration: none;
+  color: black;
+}
+
+.blogBox p,
+.blogBox section {
+  margin-top: 10px;
+}
+
+.fa-arrow-right {
+  margin-left: 10px;
+  color: green;
 }
