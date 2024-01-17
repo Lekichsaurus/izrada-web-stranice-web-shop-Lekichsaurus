@@ -13,7 +13,7 @@
 .mainFont {
   margin: 20px 0;
   font-size: 3rem;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 5px;
   font-weight: bold;
   color: rgb(0, 41, 67);
@@ -34,8 +34,8 @@ main h2 {
   margin: 10px auto;
   padding: 10px;
   background-color: rgb(0, 41, 67);
-  width: 50%;
-  border-radius: 5px;
+  width: 70%;
+  border-radius: 10px;
 }
 
 .box form {
@@ -44,6 +44,7 @@ main h2 {
 }
 .box label {
   color: white;
+  font-size: 1.3rem;
 }
 
 .row {
@@ -55,18 +56,18 @@ main h2 {
 
 .row input,
 .row textarea {
+  font-size: 1.5rem;
   padding: 10px;
-  width: 80%;
-  max-width: 80%;
+  width: 100%;
+  max-width: 90%;
   max-height: 100px;
   border-radius: 5px;
 }
 
 .rowData {
   text-align: justify;
-  margin: 0 auto;
-  width: 60%;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
+  width: 70%;
 }
 
 #submit {

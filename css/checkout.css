@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+.mainColor {
+  background-color: rgb(233, 247, 255);
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -18,7 +22,6 @@
   margin: 50px auto;
   padding: 10px;
   font-size: 4rem;
-  background-color: rgb(204, 243, 242);
   text-align: center;
   border-radius: 5px;
   display: flex;

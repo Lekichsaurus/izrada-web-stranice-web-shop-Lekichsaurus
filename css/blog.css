@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+.secondaryFont {
+  font-family: "Lato", sans-serif;
+}
+
 main {
   display: flex;
 }
@@ -60,6 +64,11 @@ main {
 .fa-arrow-right {
   margin-left: 10px;
   color: green;
+  transition: 0.2s;
+}
+
+.fa-arrow-right:hover {
+  margin-left: 15px;
 }
 
 div.rightMain {

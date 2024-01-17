@@ -9,12 +9,16 @@
   width: 100%;
   margin: 0;
 }
-nav {
+
+.mainColor {
+  background-color: rgb(233, 247, 255);
+}
+
+.secondaryColor {
   background-color: rgb(204, 243, 242);
 }
 
 .firstRowNav {
-  background-color: rgb(233, 247, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -140,4 +144,17 @@ nav {
 
 .navLinks a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 860px) {
+  .logoImage {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .navLinks,
+  .firstRowNav p {
+    display: none;
+  }
 }
