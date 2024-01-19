@@ -146,6 +146,21 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 1010px) {
+  .mail-phone {
+    display: none;
+  }
+
+  .firstRowNav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .searchDiv {
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 860px) {
   .logoImage {
     display: none;

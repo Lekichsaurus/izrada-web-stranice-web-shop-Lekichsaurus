@@ -25,6 +25,10 @@ main {
   margin-bottom: 10px;
 }
 
+.container label {
+  display: block;
+}
+
 .container h3 {
   margin: 20px 0;
 }

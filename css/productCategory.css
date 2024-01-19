@@ -22,19 +22,19 @@
 .secondRow {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .firstRow a,
 .secondRow a {
-  margin: 0 20px;
+  width: 25%;
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
 }
 
 .box {
-  height: 50%;
-  margin: 10px auto;
+  height: 100%;
   padding: 50px;
   text-align: center;
 }
@@ -47,4 +47,18 @@
   width: 200px;
   height: 200px;
   padding: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .firstRow a,
+  .secondRow a {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .firstRow a,
+  .secondRow a {
+    width: 100%;
+  }
 }

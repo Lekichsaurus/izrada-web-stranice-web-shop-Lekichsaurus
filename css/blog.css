@@ -80,3 +80,23 @@ div.rightMain {
 .rightMain iframe {
   height: 100%;
 }
+
+@media screen and (max-width: 1100px) {
+  .blogBox {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .rightMain {
+    display: none;
+  }
+
+  main {
+    justify-content: center;
+  }
+
+  section {
+    display: none;
+  }
+}

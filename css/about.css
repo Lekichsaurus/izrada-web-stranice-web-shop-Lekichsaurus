@@ -61,6 +61,7 @@
 .contact {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -126,4 +127,19 @@
   border-radius: 5px;
   padding: 5px 20px;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 1500px) {
+  .firstRow {
+    width: 100%;
+  }
+  .frame {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .categoryBox {
+    width: 30%;
+  }
 }

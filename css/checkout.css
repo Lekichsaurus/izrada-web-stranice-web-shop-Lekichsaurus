@@ -14,11 +14,6 @@
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-}
-
-.box {
   margin: 50px auto;
   padding: 10px;
   font-size: 4rem;
@@ -43,7 +38,8 @@
   margin: 0 3vw;
 }
 
-.right {
+.right,
+.left {
   width: 100%;
 }
 
@@ -187,4 +183,27 @@
 
 .total span {
   margin: 0 20px;
+}
+
+@media screen and (max-width: 1220px) {
+  .info span:nth-of-type(2),
+  .quantity {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .price span {
+    font-size: 1.1rem;
+  }
+
+  .price {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .container {
+    flex-wrap: wrap;
+  }
 }
