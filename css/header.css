@@ -15,7 +15,7 @@
 }
 
 .secondaryColor {
-  background-color: rgb(204, 243, 242);
+  background-color: rgb(198, 223, 236);
 }
 
 .firstRowNav {
@@ -129,7 +129,6 @@
 }
 
 .navLinks div {
-  background-color: aliceblue;
   padding: 10px;
   border-radius: 10px;
   display: inline-block;
@@ -139,7 +138,7 @@
 .navLinks div:hover {
   cursor: pointer;
   transform: scale(1.02);
-  box-shadow: 1px 1px 1px rgb(0, 41, 67);
+  box-shadow: 2px 2px 5px rgb(233, 247, 255);
 }
 
 .navLinks a {

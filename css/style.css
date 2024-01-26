@@ -33,6 +33,10 @@
   display: block;
 }
 
+.mainThirdRow {
+  background-color: rgb(233, 247, 255);
+}
+
 .container {
   display: block;
 }
@@ -50,13 +54,10 @@
   margin-bottom: 10vh;
 }
 
-.mainThirdRow,
 .mainFourthRow {
   justify-content: space-around;
-}
-
-.mainFourthRow {
-  background-color: rgb(204, 243, 242);
+  background-image: linear-gradient(to bottom, rgb(233, 247, 255), rgba(198, 223, 236, 0.73)),
+    url("https://previews.123rf.com/images/maximmmmum/maximmmmum1204/maximmmmum120400013/13009293-seamless-background-with-electronic-devices.jpg");
 }
 
 .mainFifthRow {
