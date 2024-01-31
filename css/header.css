@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  color: black;
 }
 
 .auto-height-iframe {
@@ -29,7 +28,13 @@
   margin-left: 10px;
 }
 
+.mail-phone-socials i {
+  line-height: 30px;
+  display: inline-block;
+}
+
 .mail-phone-socials a {
+  color: black;
   text-decoration: none;
 }
 
@@ -45,10 +50,8 @@
   margin-top: 10px;
   width: 30px;
   height: 30px;
-  line-height: 30px;
   border: thin black;
   border-radius: 5px;
-  display: inline-block;
   background-color: white;
   text-align: center;
   color: rgb(0, 41, 67);
@@ -133,6 +136,7 @@
   border-radius: 10px;
   display: inline-block;
   margin: 0 30px;
+  color: black;
 }
 
 .navLinks div:hover {
@@ -143,6 +147,7 @@
 
 .navLinks a {
   text-decoration: none;
+  color: black;
 }
 
 @media screen and (max-width: 1010px) {

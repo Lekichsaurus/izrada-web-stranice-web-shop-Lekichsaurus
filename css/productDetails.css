@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+.mainFont {
+  font-family: "Montserrat", sans-serif;
+}
 
 .auto-height-iframe {
   border: none;
@@ -32,6 +35,11 @@
   width: 40vw;
   height: 40vw;
   padding: 10px;
+  transition: 0.3s;
+}
+
+.smallImg:hover {
+  transform: scale(1.03);
 }
 
 .leftBox img {
@@ -103,9 +111,20 @@
 #check01:checked ~ .details1 {
   display: block;
 }
+
+#check01:checked ~ .details2,
+#check01:checked ~ .details3 {
+  display: none;
+}
+
 #check02:checked ~ .details2 {
   display: flex;
 }
+#check02:checked ~ .details1,
+#check02:checked ~ .details3 {
+  display: none;
+}
+
 #check03:checked ~ .details3 {
   display: flex;
 }
