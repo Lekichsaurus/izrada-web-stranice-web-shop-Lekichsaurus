@@ -20,24 +20,25 @@
 
 .mainFirstRow {
   font-size: 3rem;
-  text-align: center;
-  background-image: linear-gradient(to bottom, rgba(233, 247, 255, 0.93), rgba(233, 247, 255, 0.53)), url(../images/rest/banner.webp);
-  background-size: cover;
+  text-align: justify;
   height: 80vh;
+  width: 100%;
 }
 
 .mainFirstRow p {
+  display: inline-block;
+  background-image: linear-gradient(to bottom, rgba(233, 247, 255, 0.23), rgba(233, 247, 255, 0.03)), url(../images/rest/banner.webp);
+  background-size: cover;
+  background-repeat: repeat;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Bebas Neue", sans-serif;
-  margin: 0 auto;
-  font-size: 30vw;
+  margin: -2vh auto;
+  font-size: 33.5vw;
   color: rgb(204, 243, 242);
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: rgb(156, 171, 179);
-}
-
-.mainFirstRow p span {
-  margin: 20px 0;
-  display: block;
 }
 
 .mainThirdRow {
