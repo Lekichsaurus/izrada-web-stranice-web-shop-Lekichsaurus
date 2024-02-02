@@ -14,7 +14,7 @@
 }
 
 .secondaryColor {
-  background-color: rgb(198, 223, 236);
+  background-color: rgb(215, 242, 254);
 }
 
 .firstRowNav {
@@ -112,6 +112,7 @@
 .secondRowNav {
   display: flex;
   justify-content: space-between;
+  background: linear-gradient(to center, rgba(215, 242, 254, 0.73), rgba(232, 247, 255, 0.53));
 }
 
 .logoImage {
