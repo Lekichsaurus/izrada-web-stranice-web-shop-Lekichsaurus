@@ -15,6 +15,14 @@
     <link rel="preconnect" href="digitaloceanspaces.com" />
 
     <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+      #str {
+        width: 100%;
+        height: auto;
+        color: black;
+      }
+    </style>
   </head>
   <body>
     <header id="header"></header>
@@ -96,24 +104,28 @@
 
         <h2 class="secondaryFont">Blog</h2>
         <div class="mainFourthRow">
-          <a class="blogBox" href="./blogDetail.html">
+          <a
+            onmouseenter="startTypewriter(this, 'Stvari na koje treba obratiti pozornost prilikom odabira Vaše sljedeće perilice')"
+            onmouseleave="endTypeWriter(this)"
+            class="blogBox"
+            href="./blogDetail.html">
             <img class="blogImages" src="./images/rest/blogPhoto1.Webp" alt="slika perilice za blog 1" />
-            <h2>Kako izabrati perilicu rublja?</h2>
-            <p>Stvari na koje treba obratiti pozornost prilikom odabira Vaše sljedeće perilice</p>
-            <br />
+            <h2>Vodić za odabir perilice rublje koja Vam najviše odgovara</h2>
+            <p id="str1"></p>
             <p>
               Više o temi
               <i class="fa-solid fa-arrow-right fa-sm" style="color: #1f9b1c"></i>
             </p>
           </a>
 
-          <a class="blogBox" href="./blogDetail.html">
+          <a
+            onmouseenter="startTypewriter(this, 'Kako pravilno odabrati automobilske gume.')"
+            onmouseleave="endTypeWriter(this)"
+            class="blogBox"
+            href="./blogDetail.html">
             <img class="blogImages" src="./images/rest/blogPhoto2.Webp" alt="slika automobilskih guma za blog 2" />
             <h2>Kako izabrati automobilske gume?</h2>
-            <p>
-              Odabir pravih automobilskih guma ključan je za sigurnost i performanse vašeg vozila, stoga pažljivo razmotrite faktore prije donošenja
-              odluke.
-            </p>
+            <p id="str2"></p>
             <br />
             <p>
               Više o temi<span>
@@ -122,13 +134,14 @@
             </p>
           </a>
 
-          <a class="blogBox" href="./blogDetail.html">
+          <a
+            onmouseenter="startTypewriter(this, 'Vodič za odabir savršenog laptopa.')"
+            onmouseleave="endTypeWriter(this)"
+            class="blogBox"
+            href="./blogDetail.html">
             <img class="blogImages" src="./images/rest/blogPhoto3.Webp" alt="slika laptopa za blog 3" />
             <h2>Prva pomoć kod odabira laptopa</h2>
-            <p>
-              U ovom članku vam pružamo vodič za odabir savršenog laptopa, pomažući vam navigirati kroz mnoštvo opcija kako biste pronašli uređaj
-              idealan za vaše potrebe.
-            </p>
+            <p id="str3"></p>
             <br />
             <p>
               Više o temi<span>
@@ -163,5 +176,36 @@
 
     <script src="./js/header.js"></script>
     <script src="./js/footer.js"></script>
+    <script>
+      function startTypewriter(element, string) {
+        var el = element.querySelector("p");
+        var typingInterval;
+        var currentIndex = 0;
+
+        el.style.display = "inline-block";
+        el.innerHTML = ""; // Clear the previous content
+        currentIndex = 0; // Reset the index
+
+        // Use setInterval to append characters one by one
+        typingInterval = setInterval(function () {
+          if (currentIndex < string.length) {
+            el.innerHTML += string[currentIndex];
+            currentIndex++;
+          } else {
+            clearInterval(typingInterval);
+          }
+        }, 10);
+
+        // Store the interval in the element for later use
+        element.typingInterval = typingInterval;
+      }
+
+      function endTypeWriter(element) {
+        clearInterval(element.typingInterval); // Clear the interval
+        var el = element.querySelector("p");
+        el.innerHTML = "";
+        el.style.display = "none";
+      }
+    </script>
   </body>
 </html>

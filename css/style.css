@@ -20,13 +20,12 @@
 
 .mainFirstRow {
   font-size: 3rem;
-  text-align: justify;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
+  margin-bottom: 20vh;
 }
 
 .mainFirstRow p {
-  display: inline-block;
   background-image: linear-gradient(to bottom, rgba(233, 247, 255, 0.23), rgba(233, 247, 255, 0.03)), url(../images/rest/banner.webp);
   background-size: cover;
   background-repeat: repeat;
@@ -34,10 +33,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Bebas Neue", sans-serif;
-  margin: -2vh auto;
-  font-size: 33.5vw;
+  font-size: 33vw;
   color: rgb(204, 243, 242);
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: rgb(156, 171, 179);
 }
 
@@ -54,7 +52,6 @@
   margin: 0 30px;
 }
 
-.mainFirstRow,
 .mainSecondRow,
 .mainThirdRow,
 .mainFourthRow,
@@ -65,7 +62,7 @@
 
 .mainFourthRow {
   justify-content: space-around;
-  background-image: linear-gradient(to bottom, rgb(233, 247, 255), rgba(198, 223, 236, 0.73)),
+  background-image: linear-gradient(to bottom, rgb(233, 247, 255), rgba(198, 223, 236, 0.93)),
     url("https://previews.123rf.com/images/maximmmmum/maximmmmum1204/maximmmmum120400013/13009293-seamless-background-with-electronic-devices.jpg");
 }
 

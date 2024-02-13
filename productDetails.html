@@ -16,23 +16,44 @@
     <main>
       <div class="container">
         <div class="firstRow">
-          <div class="box leftBox">
+          <div class="box leftBox" id="smallImagesContainer">
             <a href="">
-              <img class="smallImg productCategoryImages" src="./images/products/productDetails/tv4.jpg" alt="slika televizije" />
+              <img
+                class="smallImage productCategoryImages"
+                src="./images/products/productDetails/tv4.jpg"
+                alt="slika televizije"
+                onclick="selectImage(event, this)" />
             </a>
             <a href="">
-              <img class="smallImg productCategoryImages" src="./images/products/productDetails/tv.jpg" alt="slika televizije" />
+              <img
+                class="smallImage productCategoryImages"
+                src="./images/products/productDetails/tv.jpg"
+                alt="slika televizije"
+                onclick="selectImage(event, this)" />
             </a>
             <a href="">
-              <img class="smallImg productCategoryImages" src="./images/products/productDetails/tv2.jpg" alt="slika televizije" />
+              <img
+                class="smallImage productCategoryImages"
+                src="./images/products/productDetails/tv2.jpg"
+                alt="slika televizije"
+                onclick="selectImage(event, this)" />
             </a>
             <a href="">
-              <img class="smallImg productCategoryImages" src="./images/products/productDetails/tv3.jpg" alt="slika televizije" />
+              <img
+                class="smallImage productCategoryImages"
+                src="./images/products/productDetails/tv3.jpg"
+                alt="slika televizije"
+                onclick="selectImage(event, this)" />
             </a>
           </div>
 
-          <div class="box middleBox">
-            <img class="productCategoryImages" src="./images/products/tv/tv.jpeg" alt="slika televizije" />
+          <div class="box middleBox" id="bigImageContainer">
+            <img
+              class="productCategoryImages"
+              id="bigImage"
+              src="./images/products/tv/tv.jpeg"
+              alt="slika televizije"
+              onclick="selectImage(event, this)" />
           </div>
 
           <div class="box rightBox mainFont">
@@ -365,5 +386,30 @@
 
     <script src="./js/header.js"></script>
     <script src="./js/footer.js"></script>
+    <script>
+      function selectImage(event, clickedImage) {
+        event.preventDefault();
+
+        // Get references to the images
+        var bigImage = document.getElementById("bigImage");
+        var smallImages = document.querySelectorAll(".smallImage");
+
+        // Swap the source with the big image
+        var tempSrc = clickedImage.src;
+        clickedImage.src = bigImage.src;
+        bigImage.src = tempSrc;
+
+        // Apply the 'selected' class for styling
+        clickedImage.classList.add("selected");
+        bigImage.classList.remove("selected");
+
+        // Reset the 'selected' class for other small images
+        smallImages.forEach(function (smallImage) {
+          if (smallImage !== clickedImage) {
+            smallImage.classList.remove("selected");
+          }
+        });
+      }
+    </script>
   </body>
 </html>
