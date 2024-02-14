@@ -8,7 +8,7 @@ main {
   justify-content: center;
 }
 
-div.container {
+.containerAsideBlog {
   width: 95%;
   position: sticky;
   top: 20px;
@@ -16,14 +16,13 @@ div.container {
   border-radius: 5px;
 }
 
-.blogImages {
+.blogImagesAsideBlog {
   width: 100%;
   height: 80%;
   border-radius: 5px;
-  outline: 1px solid rgb(158, 158, 158);
 }
 
-.blogBox {
+.blogBoxAsideBlog {
   margin: 20px auto;
   padding: 20px;
   text-align: justify;
@@ -34,23 +33,30 @@ div.container {
   transition: 0.3s;
 }
 
-.blogBox:hover {
+.blogBoxAsideBlog:hover {
   transform: scale(1.02);
   background-color: white;
 }
 
-.blogBox:hover a {
+.blogBoxAsideBlog:hover p,
+.blogBoxAsideBlog:hover section,
+.blogBoxAsideBlog:hover h4 {
   color: rgb(0, 41, 67);
 }
 
-.blogBox a {
-  text-decoration: none;
-  color: white;
+.blogBoxAsideBlog:hover a {
+  color: rgb(0, 41, 67);
 }
 
-.blogBox p,
-.blogBox section {
+.blogBoxAsideBlog a {
+  text-decoration: none;
+}
+
+.blogBoxAsideBlog p,
+.blogBoxAsideBlog section,
+.blogBoxAsideBlog h4 {
   margin-top: 10px;
+  color: white;
 }
 
 .fa-arrow-right {
