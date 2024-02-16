@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-main {
+.asideBlogMain {
   display: flex;
   justify-content: center;
 }
