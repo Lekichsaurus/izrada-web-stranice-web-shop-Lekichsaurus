@@ -21,6 +21,14 @@
   font-size: 1.2rem;
 }
 
+.animate__animated {
+  animation-play-state: paused;
+}
+
+.animate__animated-scroll {
+  animation-play-state: running;
+}
+
 .box img {
   width: 100%;
   height: 70vh;
