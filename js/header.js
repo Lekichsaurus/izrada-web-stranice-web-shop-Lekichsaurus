@@ -4,7 +4,7 @@ function myFunction() {
     document.getElementById("header").innerHTML = this.responseText;
   };
 
-  header.open("GET", "./partials/header.html");
+  header.open("GET", "partials/header.html");
   header.send();
 }
 myFunction();
