@@ -4,7 +4,7 @@ function myFunction() {
     document.getElementById("footer").innerHTML = this.responseText;
   };
 
-  footer.open("GET", "../partials/footer.html");
+  footer.open("GET", "./partials/footer.html");
   footer.send();
 }
 myFunction();
