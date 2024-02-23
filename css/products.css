@@ -15,11 +15,11 @@
   text-decoration: underline;
 }
 
-main {
+.mainProducts {
   text-align: center;
 }
 
-.container {
+.containerProducts {
   display: flex;
 }
 
